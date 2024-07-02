@@ -1,0 +1,261 @@
+/*Restaurando valores*/ 
+*{
+  margin: 0 ;
+  padding: 0; 
+  box-sizing: border-box;
+} 
+
+:root{
+  --user-bubble: #8792eaf2;
+  --chat-bubble: #f2e39c;
+  --font-color: #0d0d0e;
+  --border-bubble-color: #1f2136;
+  --background-color:#252d687d ;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+  width: 100%;
+  background-color: #000000;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #EABE3F;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #EABE3F;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+
+/* Estilo del contenedor principal */
+.main-container {
+  display: flex;
+  height: 92vh;
+  /* background-color: rgb(186, 215, 215); */
+  background-image: url(img/fondo.jpg);
+  background-attachment: fixed;
+  background-repeat: space;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* Estilo del sidebar */
+.sidebar {
+  width: 15%;
+  color: #ebecf0;
+  /* background-color: rgb(6, 6, 10); */
+  padding: 30px;
+  border: 1px solid #EABE3F;
+  border-radius: 5px;
+  overflow-y: auto;
+  background-image: url(img/download.jfif);
+  height: 75vh;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.sidebar h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  color: rgb(226, 229, 231);
+  padding: 10px;
+  box-shadow: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Estilo de los ítems del historial */
+.sidebar li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  padding: 10px;
+  /* background-color: #000080;*/
+  border: 1px solid #14142c36; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  border-bottom: 1px solid #EABE3F; /* Línea divisoria */
+}
+
+.sidebar li:hover{
+  background-color: #47474a67;
+}
+
+.sidebar li:last-child {
+  border-bottom: none; /* Quitar línea del último elemento */
+}
+
+/* Estilo de la sección del chat */
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+}
+
+.chat-section h1 {
+  margin-top: 0;
+}
+
+/* Estilo del contenedor del chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 70%;
+  height: 60vh;
+  padding: 15px;
+  border: 1px solid #EABE3F;
+  background-color: #000000de;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.send-message-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border: 1px solid #EABE3F;;
+  border-radius: 0px 0px 10px 10px;
+  height: 6vh; 
+  width: 70%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* Estilo del globo de diálogo del mensaje enviado */
+.user-bubble {
+  display: flex;
+  align-items: center;
+  background-color: #000080;
+  color: #dfdfe0;
+  align-self: flex-end;
+  border: 2px solid;
+  border-radius: 10px 2px;
+  border-color: #000000;
+  padding: 10px;
+  margin-bottom: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.chat-bubble {
+  display: flex;
+  align-items: center;
+  background-color: #D4AF37;
+  color: #f1f1f8;
+  align-self: flex-start;
+  border: 2px solid;
+  border-radius: 10px 2px;
+  border-color: #000000;
+  padding: 12px;
+  margin-bottom: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+  overflow: hidden;
+  overflow-y: auto; 
+}
+
+.bubble-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#userInput {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  font-size: medium;
+  height: 5.4vh; 
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+}
+
+#userInput:hover {
+  background-color: #f2f2f2cc;
+}
+
+#btn {
+  height: 5.8vh;
+  width: 5vw;
+  cursor: pointer;
+  font-size: large;
+}
+
+#btn:hover {
+  background-color: #4141cebb; 
+  cursor: pointer;
+}
+
+h1 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  color: aliceblue;
+  border: 1px solid;
+  border-radius: 10px 10px 0px 0px;
+  border-color: #EABE3F;  
+  background-color: #000000; 
+  height: 10vh; 
+  width: 70%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+} 
+
+/* Estilo del footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: #000000;
+  color: #EABE3F;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border-top: 1px solid #EABE3F;
+}

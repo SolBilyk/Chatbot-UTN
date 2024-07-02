@@ -1,0 +1,136 @@
+/*Restaurando valores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Estilo de la barra de navegación */
+nav {
+    width: 100%;
+    background-color: #000000;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #EABE3F;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #EABE3F;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+/* Estilo del contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    background-image: url(img/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: space;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Estilo de la sección del chat */
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.chat-section h1 {
+    margin-top: 30px;
+}
+
+/* Estilo del contenedor del chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80%;
+    border: 1px solid #EABE3F;
+    background-color: #000000de;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre-wrap;
+
+}
+
+#icono{
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border: 1px solid;
+    border-radius: 10px 10px 0px 0px;
+    border-color: #EABE3F;
+    background-color: #000000;
+    height: 10vh;
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+
+img{
+    height: 270px;
+    width: 450px;
+}
+
+#ul1{
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Estilo del footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #000000;
+    color: #EABE3F;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    border-top: 1px solid #EABE3F;
+}
